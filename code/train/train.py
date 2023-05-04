@@ -120,8 +120,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--kernel', type=str, default='rbf', help='Kernel type to be used in the algorithm')
     parser.add_argument('--penalty', type=float, default=1.0, help='Penalty parameter of the error term')
-    args = parser.parse_args()
-    return args
+    return parser.parse_args()
 
 
 if __name__ == '__main__':
